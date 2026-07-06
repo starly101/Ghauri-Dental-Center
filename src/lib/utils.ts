@@ -5,18 +5,14 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function formatPhoneNumber(phone: string): string {
-  return phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
-}
-
-export const BUSINESS_INFO = {
+export const businessData = {
   name: "Ghauri Dental Center",
   tagline: "Smile with Confidence",
   location: "DHA Lahore",
   rating: 4.9,
   reviewCount: 303,
-  phone: "+92-42-XXXXXXX",
-  whatsapp: "+92-300-XXXXXXX",
+  phone: "+92-42-35781234",
+  whatsapp: "+92-300-4567890",
   email: "info@ghauridental.com",
   address: "DHA Phase VI, Lahore, Pakistan",
   workingHours: {
@@ -26,7 +22,7 @@ export const BUSINESS_INFO = {
   },
 };
 
-export const SERVICES = [
+export const services = [
   {
     id: "implants",
     title: "Dental Implants",
@@ -77,7 +73,39 @@ export const SERVICES = [
   },
 ];
 
-export const TESTIMONIALS = [
+export const currentOffers = [
+  {
+    id: 1,
+    title: "Free Consultation",
+    description: "Comprehensive dental examination and treatment plan",
+    originalPrice: "PKR 2,000",
+    validUntil: "Limited Time",
+  },
+  {
+    id: 2,
+    title: "20% Off Teeth Whitening",
+    description: "Professional laser whitening for a brighter smile",
+    originalPrice: "PKR 25,000",
+    validUntil: "This Month Only",
+  },
+  {
+    id: 3,
+    title: "Braces Special Package",
+    description: "Complete orthodontic treatment with flexible payment plans",
+    originalPrice: "PKR 120,000",
+    validUntil: "First 10 Patients",
+  },
+];
+
+export const emergencyInfo = {
+  title: "24/7 Emergency Dental Care",
+  description: "Available for urgent dental issues including severe pain, trauma, and infections",
+  phone: "+92-300-4567890",
+  availableTimes: "After hours & weekends",
+  responseTime: "Within 2 hours",
+};
+
+export const testimonials = [
   {
     id: 1,
     patient: "Fatima K.",
@@ -106,3 +134,7 @@ export const TESTIMONIALS = [
     date: "1 month ago",
   },
 ];
+
+export function formatPhoneNumber(phone: string): string {
+  return phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+}
