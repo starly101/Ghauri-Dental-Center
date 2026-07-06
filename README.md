@@ -1,6 +1,6 @@
-# Ghauri Dental Center - Premium Dental Website
+# Ghauri Dental Center - Premium Website Redesign
 
-A modern, conversion-focused website for Ghauri Dental Center in DHA Lahore.
+A modern, high-converting dental clinic website built with the latest technologies.
 
 ## 🚀 Quick Start
 
@@ -18,60 +18,57 @@ npm run build
 npm start
 ```
 
-## 📦 Tech Stack
+## 🛠️ Tech Stack
 
-- **Framework:** Next.js 15 (App Router)
-- **Styling:** Tailwind CSS v4
-- **Animations:** Framer Motion + Lenis (smooth scroll)
-- **Icons:** Lucide React
-- **Language:** TypeScript
+- **Framework**: Next.js 15 (App Router)
+- **React**: 19.0
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion 11
+- **Icons**: Lucide React
+- **TypeScript**: 5.7
+- **Fonts**: Plus Jakarta Sans (headings), Inter (body)
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx      # Root layout with fonts & SEO
+│   ├── page.tsx        # Homepage
+│   └── globals.css     # Global styles (Tailwind v4)
+├── components/
+│   └── sections/       # Page sections
+│       ├── hero.tsx
+│       ├── services.tsx
+│       ├── testimonials.tsx
+│       ├── offers.tsx
+│       ├── emergency.tsx
+│       └── contact.tsx
+└── lib/
+    └── utils.ts        # Business data & content
+```
 
 ## 🎨 Design Features
 
-- Premium color palette (Deep Navy + Warm Gold)
-- Smooth scroll with Lenis
-- Animated sections with Framer Motion
-- Mobile-first responsive design
-- Trust signals above the fold
-- Three primary CTAs: Call, WhatsApp, Book Appointment
+- **Trust-first design**: 4.9★ rating and 300+ reviews prominently displayed
+- **Three primary CTAs**: Call, WhatsApp, Book Appointment
+- **Emergency care section**: 24/7 availability highlighted
+- **Service cards**: Six high-ticket treatments with pricing
+- **Current offers**: Promotional section for deals
+- **Patient testimonials**: Social proof from real reviews
+- **Contact form**: Easy appointment booking
+- **Responsive**: Mobile-first design
+- **Smooth animations**: Framer Motion throughout
 
-## 📄 Sections
-
-1. **Hero** - Trust badge, headline, CTAs, emergency banner
-2. **Services** - Six premium treatments with pricing
-3. **Testimonials** - Patient reviews with ratings
-4. **Contact** - Location, hours, appointment form
-5. **Footer** - Business info and links
-
-## 🔄 Customization
+## ⚙️ Configuration
 
 Update business information in `src/lib/utils.ts`:
 - Phone numbers
+- WhatsApp number
 - Address
-- Working hours
-- Services and pricing
-- Testimonials
+- Email
+- Business hours
 
-## 📱 Conversion Optimization
+## 📄 License
 
-- Above-fold trust signals (4.9★, 303+ reviews)
-- Multiple CTA paths (Call, WhatsApp, Form)
-- Emergency care prominence
-- Pricing transparency
-- Social proof throughout
-
-## 🚀 Deployment
-
-```bash
-npm run build
-npm start
-```
-
-Or deploy to Vercel:
-```bash
-vercel deploy
-```
-
----
-
-Built with the QWEN Creative Engine v5.0
+Private - For Ghauri Dental Center
